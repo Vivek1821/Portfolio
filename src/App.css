@@ -1,0 +1,19 @@
+html {
+  background-color: #010913;
+}
+
+/* Custom scrollbar hiding styles */
+.bg-tertiary::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.bg-tertiary::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.sticky-same-props {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3rem;
+  right: 3rem;
+}
