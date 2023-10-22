@@ -53,7 +53,7 @@ const Sidebar = () => {
           active ? "translate-x-0 " : "-translate-x-full md:translate-x-0 "
         } `}
       >
-        <div className="flex flex-col h-[90vh]  bg-primary ml-10  sm:h-[90vh]  md:h-[93vh] ml-5 m-5 relative ">
+        <div className="flex flex-col h-[90vh]  bg-primary sm:h-[90vh]  md:h-[93vh] ml-5 m-5 relative ">
           <div className="flex flex-col items-center">
             <img
               src={myImage}

@@ -15,6 +15,9 @@ export default {
         76: "300px",
         86: "350px",
       },
+      width: {
+        106: "450px",
+      },
     },
   },
   plugins: [],

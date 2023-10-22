@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Hero from "./Components/Hero";
 import Sidebar from "./Components/Sidebar";
+import Work from "./Components/Work";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="flex flex-row-reverse h-screen w-screen relative md:space-x-4">
         <div className="flex-grow h-full w-full  ">
           <Hero />
+          <Work />
         </div>
         <div
           className="w-full 
