@@ -1,16 +1,22 @@
 import React from "react";
 import vivek from "../assets/vivek.jpg";
+import Jump from "react-reveal/Jump";
+import Fade from "react-reveal/Fade";
 
 const About = () => {
   return (
     <div className="flex flex-col md:flex-row items-center text-white m-10 mr-10">
-      <img
-        src={vivek}
-        alt="Vivek"
-        className="hero-image w-60 mb-10 md:h-52 md:w-72 lg:w-80 rounded-full object-cover "
-      />
+      <Fade bottom delay={1000}>
+        <img
+          src={vivek}
+          alt="Vivek"
+          className="hero-image w-60 mb-10 md:h-52 md:w-72 lg:w-80 rounded-full object-cover "
+        />
+      </Fade>
       <div className="about-text max-h-96  bg-gray-900 rounded-lg p-8   whitespace-pre-line md:ml-8 text-center md:text-left">
-        <h2 className="text-xl md:text-3xl font-bold mb-4">Hi, I'm Vivek!</h2>
+        <Jump delay={1500}>
+          <h2 className="text-xl md:text-3xl font-bold mb-4">Hi, I'm Vivek!</h2>
+        </Jump>
         <p className="text-xs md:text-sm  mb-6">
           I'm a client-focused software engineering graduate, skilled in
           harnessing transformative technologies to craft tailored solutions.

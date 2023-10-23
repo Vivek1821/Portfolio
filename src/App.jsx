@@ -5,6 +5,7 @@ import Sidebar from "./Components/Sidebar";
 import Work from "./Components/Work";
 import About from "./Components/About";
 import Experience from "./Components/Experience";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Work />
           <About />
           <Experience />
+          <Contact />
         </div>
         <div
           className="w-full 
