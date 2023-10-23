@@ -2,10 +2,11 @@ import React from "react";
 import TypeIt from "typeit-react";
 import CoverPage2 from "../assets/CoverPage2.jpg";
 import Diagram from "../assets/diagram.jpg";
+import vivek from "../assets/vivek.jpg";
 
 function Hero() {
   return (
-    <div className="mt-10 lg:h-3/5 relative">
+    <div className="mt-10 mb-10 lg:h-3/5 relative">
       <div className="flex flex-row text-textGold h-96 m-2 md:h-full md:w-full relative">
         <img
           src={CoverPage2}
@@ -37,11 +38,11 @@ function Hero() {
               />
             </span>
           </div>
-          <div className="md:w-72 lg:w-80 ">
+          <div className="md:w-72 lg:w-106 ">
             <img
-              src={Diagram}
+              src={vivek}
               alt="diagram"
-              className="w-full h-auto hidden lg:block"
+              className="hero-image w-full h-auto lg:pb-16 hidden bg-opacity-100 lg:block"
             />
           </div>
         </div>

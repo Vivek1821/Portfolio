@@ -3,6 +3,7 @@ import "./App.css";
 import Hero from "./Components/Hero";
 import Sidebar from "./Components/Sidebar";
 import Work from "./Components/Work";
+import About from "./Components/About";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <div className="flex-grow h-full w-full  ">
           <Hero />
           <Work />
+          <About />
         </div>
         <div
           className="w-full 
