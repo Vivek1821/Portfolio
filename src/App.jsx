@@ -4,6 +4,7 @@ import Hero from "./Components/Hero";
 import Sidebar from "./Components/Sidebar";
 import Work from "./Components/Work";
 import About from "./Components/About";
+import Experience from "./Components/Experience";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Hero />
           <Work />
           <About />
+          <Experience />
         </div>
         <div
           className="w-full 
