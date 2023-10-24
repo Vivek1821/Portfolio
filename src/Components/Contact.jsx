@@ -11,14 +11,30 @@ const Contact = () => {
       message: "",
     },
     onSubmit: (values, { resetForm }) => {
-      alert(JSON.stringify(values, null, 2));
+      // alert(JSON.stringify(values, null, 2));
+      fetch("https://formsubmit.co/ajax/mahajanvivek1221@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(values, null, 2),
+      })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch((error) => console.log(error));
       resetForm();
     },
   });
 
   return (
     <div className="text-white ml-10 p-4">
-      <form className="" onSubmit={formik.handleSubmit}>
+      <form
+        className=""
+        onSubmit={formik.handleSubmit}
+        action="https://formsubmit.co/mahajanvivek1221@gmail.com"
+        method="POST"
+      >
         <div className="grid grid-cols-2 gap-10">
           <div className="flex flex-col gap-5">
             <label htmlFor="firstName" className="mb-3 text-base text-textGold">

@@ -48,8 +48,8 @@ const Sidebar = () => {
 
       {/* Profile */}
       <div
-        className={`z-30 transition-opacity ${
-          active ? "translate-x-0 " : "-translate-x-full md:translate-x-0 "
+        className={`z-30 transition-opacity  ${
+          active ? " translate-x-0 " : "-translate-x-full md:translate-x-0 "
         } `}
       >
         <div className="flex flex-col h-[90vh]  bg-primary sm:h-[90vh]  md:h-[93vh] ml-5 m-5 relative ">

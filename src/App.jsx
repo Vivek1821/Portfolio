@@ -15,8 +15,8 @@ function App() {
 
         <div className="w-4/5 ">
           <Hero /> */}
-      <div className="flex flex-row-reverse h-screen w-screen relative md:space-x-4">
-        <div className="flex-grow h-full w-full  ">
+      <div className="flex flex-row-reverse h-screen w-screen relative md:overflow-auto  ">
+        <div className="flex-grow h-full w-full over md:overflow-auto md:overflow-x-clip">
           <Hero />
           <Work />
           <About />
@@ -28,9 +28,9 @@ function App() {
         </div>
         <div
           className="w-full 
-        h-full absolute left-0 top-0  md:w-96 md:sticky lg:relative "
+        h-full absolute left-0 top-0  md:w-96 md:sticky lg:relative"
         >
-          <div className="h-full w-full max-w-xs ">
+          <div className="h-full w-full max-w-xs  ">
             <Sidebar />
           </div>
         </div>
