@@ -6,6 +6,7 @@ import Work from "./Components/Work";
 import About from "./Components/About";
 import Experience from "./Components/Experience";
 import Contact from "./Components/Contact";
+import GetInTouch from "./Components/GetInTouch";
 
 function App() {
   return (
@@ -20,7 +21,10 @@ function App() {
           <Work />
           <About />
           <Experience />
-          <Contact />
+          <div className="flex flex-col md:flex-row">
+            <Contact />
+            <GetInTouch />
+          </div>
         </div>
         <div
           className="w-full 

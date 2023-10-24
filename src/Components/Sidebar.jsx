@@ -36,7 +36,7 @@ const Sidebar = () => {
         <div className=" fixed top-0 left-0 opacity-30 bg-gray-700 h-screen w-screen md:h-0 md:w-0  pointer-events-none"></div>
       ) : null}
       <div
-        className="flex flex-row justify-between text-white text-xl m-3 w-full cursor-pointer md:hidden"
+        className="flex flex-row justify-between text-white text-xl m-3 w-full cursor-pointer md:hidden  "
         onClick={handleToggle}
       >
         {active ? (
@@ -44,7 +44,6 @@ const Sidebar = () => {
         ) : (
           <TbLayoutSidebarLeftExpand />
         )}
-        <LiaBarsSolid className="font-bold" />
       </div>
 
       {/* Profile */}
