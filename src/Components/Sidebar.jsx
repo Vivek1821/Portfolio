@@ -1,5 +1,5 @@
-import React, { useState, createContext } from "react";
-import myImage from "../assets/vivek.jpg";
+import React, { useState } from "react";
+import myImage from "../assets/VivekImg.jpg";
 import {
   TbLayoutSidebarLeftExpand,
   TbLayoutSidebarRightExpand,
@@ -10,14 +10,14 @@ import {
   SlSocialLinkedin,
   SlSocialTwitter,
 } from "react-icons/sl";
-import { LiaBarsSolid } from "react-icons/lia";
-import VivekMahajanResume from "../assets/VivekMahajan.pdf";
+import VivekMahajanResume from "../assets/Vivek Mahajan.pdf";
 
 const Sidebar = () => {
   const [active, setActive] = useState(null);
 
   const handleToggle = () => {
     setActive((prevState) => !prevState);
+    document.body.style.overflowY = active ? "auto" : "hidden";
   };
 
   const downloadResume = () => {
@@ -27,8 +27,6 @@ const Sidebar = () => {
   const handleClick = (link) => {
     window.open(link);
   };
-
-  const handleOpacity = createContext();
 
   return (
     <>
@@ -49,14 +47,14 @@ const Sidebar = () => {
       {/* Profile */}
       <div
         className={`z-30 transition-opacity  ${
-          active ? " translate-x-0 " : "-translate-x-full md:translate-x-0 "
+          active ? " translate-x-0 " : "-translate-x-full md:translate-x-0"
         } `}
       >
         <div className="flex flex-col h-[90vh]  bg-primary sm:h-[90vh]  md:h-[93vh] ml-5 m-5 relative ">
           <div className="flex flex-col items-center">
             <img
               src={myImage}
-              className="rounded-full object-center w-2/5 mt-5"
+              className="rounded-full object-center w-5/12 mt-5"
             />
             <h1 className="text-white m-2 text-lg">Vivek Mahajan</h1>
             <div className="flex flex-col items-center">
@@ -156,26 +154,28 @@ const Sidebar = () => {
           </div>
           {/* Social Links */}
           <></>
-          <div className="flex flex-row justify-around  text-white p-3">
-            <p>
-              <SlSocialTwitter
-                onClick={() =>
-                  handleClick("https://www.linkedin.com/in/vivekmahajan128/")
-                }
-              />
-            </p>
-            <p>
-              <SlSocialGithub
-                onClick={() => handleClick("https://github.com/Vivek1821")}
-              />
-            </p>
-            <p>
-              <SlSocialLinkedin
-                onClick={() =>
-                  handleClick("https://www.linkedin.com/in/vivekmahajan128/")
-                }
-              />
-            </p>
+          <div className={`${active ? "h-20 overflow-y-auto" : null}`}>
+            <div className="flex flex-row justify-around  text-white p-3">
+              <p>
+                <SlSocialTwitter
+                  onClick={() =>
+                    handleClick("https://www.linkedin.com/in/vivekmahajan128/")
+                  }
+                />
+              </p>
+              <p>
+                <SlSocialGithub
+                  onClick={() => handleClick("https://github.com/Vivek1821")}
+                />
+              </p>
+              <p>
+                <SlSocialLinkedin
+                  onClick={() =>
+                    handleClick("https://www.linkedin.com/in/vivekmahajan128/")
+                  }
+                />
+              </p>
+            </div>
           </div>
         </div>
       </div>

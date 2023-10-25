@@ -1,7 +1,6 @@
 import React from "react";
 import TypeIt from "typeit-react";
 import CoverPage2 from "../assets/CoverPage2.jpg";
-import Diagram from "../assets/diagram.jpg";
 import vivek from "../assets/vivek.jpg";
 
 function Hero() {
@@ -13,8 +12,8 @@ function Hero() {
           alt="coverpage"
           className="opacity-30 lg:w-full"
         />
-        <div className="text-white absolute top-0 left-0 flex flex-col items-center justify-center text-center w-full h-full p-10  lg:flex-row lg:justify-around lg:text-start ">
-          <div>
+        <div className="text-white absolute top-0 left-0 flex flex-col items-center justify-center text-center w-full h-full p-10  lg:flex-row lg:justify-around lg:text-start md:overflow-hidden ">
+          <div className="">
             <h1 className="text-4xl pr-4 md:text-7xl lg:text-5xl lg:top-1/2">
               A Glimpse into My Creative Vault
             </h1>
@@ -38,11 +37,11 @@ function Hero() {
               />
             </span>
           </div>
-          <div className="md:w-72 lg:w-106 ">
+          <div className="md:w-72 lg:w-106">
             <img
               src={vivek}
               alt="diagram"
-              className="hero-image w-full h-auto lg:pb-16 hidden bg-opacity-100 lg:block"
+              className="hero-image w-full h-full lg:pb-16 hidden bg-opacity-100 lg:block contrast-100 "
             />
           </div>
         </div>
