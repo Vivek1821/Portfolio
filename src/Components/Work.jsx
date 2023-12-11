@@ -1,7 +1,7 @@
 import React from "react";
 
 const mapData = new Map([
-  ["1+", "Years Experience"],
+  // ["1+", "Years Experience"],
   [4, "Completed Projects"],
   ["2+", "Experience as Freelance"],
 ]);

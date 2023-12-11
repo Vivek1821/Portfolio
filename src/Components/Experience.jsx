@@ -14,17 +14,23 @@ const Skill = ({ skills }) => (
 const Experience = () => {
   const data = {
     experience1: {
-      position: "Junior Front-End Developer",
-      company: "Technical Veer Digital Solution",
-      timePeriod: "July, 2022 - Present",
+      position: "Front-End Developer Intern",
+      company: "Technical Veer Digital Services",
+      timePeriod: "April, 2023 - November, 2023",
       keySkills: ["ReactJS", "JavaScript", "TailwindCSS"],
     },
-    experience2: {
-      position: "Front-End Developer Intern",
-      company: "Aarohi Software Solutions",
-      timePeriod: "March, 2022 - May, 2022",
-      keySkills: ["JavaScript", "CSS", "HTML5"],
-    },
+    // experience1: {
+    //   position: "Junior Front-End Developer",
+    //   company: "Technical Veer Digital Solution",
+    //   timePeriod: "July, 2022 - Present",
+    //   keySkills: ["ReactJS", "JavaScript", "TailwindCSS"],
+    // },
+    // experience2: {
+    //   position: "Front-End Developer Intern",
+    //   company: "Aarohi Software Solutions",
+    //   timePeriod: "March, 2022 - May, 2022",
+    //   keySkills: ["JavaScript", "CSS", "HTML5"],
+    // },
   };
 
   const experienceData = Object.values(data);
